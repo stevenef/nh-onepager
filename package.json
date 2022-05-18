@@ -1,0 +1,23 @@
+{
+  "name": "nh-onepager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+	"dev": "npx tailwind -i ./src/input.css -o ./dist/style.css --watch",
+	"prod": "npx tailwind -i ./src/input.css -o ./dist/style.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevenef/nh-onepager.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevenef/nh-onepager/issues"
+  },
+  "homepage": "https://github.com/stevenef/nh-onepager#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.0.24"
+  }
+}
