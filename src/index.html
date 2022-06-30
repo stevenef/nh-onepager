@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,19 +17,22 @@
 	<title>Galerie Hagemeister</title>
 
 	<style>
-		.carousel-open:checked + .carousel-item {
+		.carousel-open:checked+.carousel-item {
 			position: static;
 			opacity: 100;
 		}
+
 		.carousel-item {
 			-webkit-transition: opacity 0.6s ease-out;
 			transition: opacity 0.6s ease-out;
 		}
-		#carousel-1:checked ~ .control-1,
-		#carousel-2:checked ~ .control-2,
-		#carousel-3:checked ~ .control-3 {
+
+		#carousel-1:checked~.control-1,
+		#carousel-2:checked~.control-2,
+		#carousel-3:checked~.control-3 {
 			display: block;
 		}
+
 		.carousel-indicators {
 			list-style: none;
 			margin: 0;
@@ -40,14 +44,17 @@
 			text-align: center;
 			z-index: 10;
 		}
-		#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-		#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-		#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
-			color: #2b6cb0;  /*Set to match the Tailwind colour you want the active one to be */
+
+		#carousel-1:checked~.control-1~.carousel-indicators li:nth-child(1) .carousel-bullet,
+		#carousel-2:checked~.control-2~.carousel-indicators li:nth-child(2) .carousel-bullet,
+		#carousel-3:checked~.control-3~.carousel-indicators li:nth-child(3) .carousel-bullet {
+			color: #2b6cb0;
+			/*Set to match the Tailwind colour you want the active one to be */
 		}
 	</style>
-	
+
 </head>
+
 <body class="font-roboto text-nh-grey-dark">
 	<!-- header -->
 	<header class="py-4 bg-nh-grey-light">
@@ -57,15 +64,17 @@
 				<span class="text-2xl">HAGE</span>
 				<span class="text-2xl ">meister</span>
 			</div>
-			<ul class="flex flex-col items-center justify-end flex-1 gap-1 pt-8 lg:pr-8 lg:gap-12 md:flex-row md:gap-4 md:pt-0">
-				<li><a class="hover:border-b-2 hover:border-nh-orange" href="#werkstattangebot">Unser Werkstattangebot</a></li>
+			<ul
+				class="flex flex-col items-center justify-end flex-1 gap-1 pt-8 lg:pr-8 lg:gap-12 md:flex-row md:gap-4 md:pt-0">
+				<li><a class="hover:border-b-2 hover:border-nh-orange" href="#werkstattangebot">Unser
+						Werkstattangebot</a></li>
 				<li><a class="hover:border-b-2 hover:border-nh-orange" href="#werkstoffe">Werkstoffe</a></li>
 				<li><a class="hover:border-b-2 hover:border-nh-orange" href="#arbeiten">Unser Arbeiten</a></li>
 				<li><a class="hover:border-b-2 hover:border-nh-orange" href="#kontakt">Kontakt</a></li>
 			</ul>
 		</div>
-	</header>	
-	
+	</header>
+
 	<!-- section 1 -->
 	<section class="container">
 		<div class="flex flex-col md:flex-row md:gap-2">
@@ -73,7 +82,8 @@
 				<div class="">
 					<img class="" src="./img/hr.svg" alt="">
 				</div>
-				<div class="absolute flex flex-col justify-center ml-48 mt-80 md:ml-24 md:mt-52 lg:ml-28 lg:mt-72 xl:ml-64 xl:mt-96">
+				<div
+					class="absolute flex flex-col justify-center ml-48 mt-80 md:ml-24 md:mt-52 lg:ml-28 lg:mt-72 xl:ml-64 xl:mt-96">
 					<span class="text-4xl tracking-[.09em] text-nh-orange xl:text-6xl">galerie</span>
 					<span class="mt-2 text-5xl xl:text-7xl xl:tracking-[.09em]">HAGE</span>
 					<span class="-mt-2 text-4xl xl:text-6xl tracking-[.01em]">meister</span>
@@ -89,7 +99,13 @@
 				<hr class="md:w-[600px] border-nh-orange" />
 			</div>
 			<p>
-				herzlichen Dank für Ihr Interesse an der <span class="text-nh-orange">galerie</span> HAGEmeister. In der Galerie erwarten Sie Goldschmiedearbeiten mit handwerklich- künstlerischem Anspruch. Sie können sich aber auch zu Ihrem Schmuck beraten lassen, eigene Ideen und Wünsche für Ihr neues Schmuckstück mitbringen oder defekte Schmuckstücke in Reparatur geben. Vielleicht wird in Ihnen ja auch der Reiz geweckt, eines unserer Unikate selbst zu besitzen oder anderen damit Ihre Wertschätzung und Sympathie zu zeigen. Als Pendant zu unserem Schmuck, finden Sie Fotografiearbeiten, Zeichnungen oder Grafiken an den Wänden.
+				herzlichen Dank für Ihr Interesse an der <span class="text-nh-orange">galerie</span> HAGEmeister. In der
+				Galerie erwarten Sie Goldschmiedearbeiten mit handwerklich- künstlerischem Anspruch. Sie können sich
+				aber auch zu Ihrem Schmuck beraten lassen, eigene Ideen und Wünsche für Ihr neues Schmuckstück
+				mitbringen oder defekte Schmuckstücke in Reparatur geben. Vielleicht wird in Ihnen ja auch der Reiz
+				geweckt, eines unserer Unikate selbst zu besitzen oder anderen damit Ihre Wertschätzung und Sympathie zu
+				zeigen. Als Pendant zu unserem Schmuck, finden Sie Fotografiearbeiten, Zeichnungen oder Grafiken an den
+				Wänden.
 			</p>
 			<span class="">Herzlichst Norbert Hagemeister</span>
 		</div>
@@ -103,9 +119,11 @@
 				<hr class="md:w-[380px] border-nh-orange" />
 			</div>
 			<p class="text-center">
-				In jedem Fall bieten wir Ihnen vorab unsere Erfahrung und know how während individueller Beratungen zu Ihren verschiedenartigen Anliegen als Voraussetzung für ein bestmögliches Bearbeitungsergebnis. Dazu nehmen wir uns gern Zeit.
+				In jedem Fall bieten wir Ihnen vorab unsere Erfahrung und know how während individueller Beratungen zu
+				Ihren verschiedenartigen Anliegen als Voraussetzung für ein bestmögliches Bearbeitungsergebnis. Dazu
+				nehmen wir uns gern Zeit.
 			</p>
-			<div class="flex flex-col gap-2 md:flex-row" >
+			<div class="flex flex-col gap-2 md:flex-row">
 				<div class="">
 					<img data-aos="fade-up" src="./img/_OM10203.jpg" alt="">
 				</div>
@@ -116,42 +134,109 @@
 					<img data-aos="fade-up" src="./img/_OM10186.jpg" alt="">
 				</div>
 			</div>
-			
-			<div class="flex flex-col items-center gap-6 md:flex-row-reverse">
-				<div class="flex flex-col lg:flex-row">
-					<ul class="ml-6 list-disc marker:text-nh-orange lg:w-1/2">
-						<li>Anfertigungen nach Ihren Wünschen, auch Verwendung Ihres Materials (Edelmetall/Besatz/Erinnerungsstücke)</li>
-						<li>Neues abgestimmtes Kettenmaterial für Anhänger und Colliers</li>
-						<li>Individuelle Trauringanfertigungen</li>
-						<li>Gravieren Ihres Schmuckes</li>
-						<li>Gestaltete Edelstein Ketten mit und ohne Edelmetall</li>
-					</ul>
-					<ul class="ml-6 list-disc marker:text-nh-orange lg:w-1/2">
-						<li>Aufziehen oder Knoten von Perlketten</li>
-						<li>Änderungen, Umarbeitungen Ihres Schmuckes</li>
-						<li>Reparatur Ihres Schmuckes</li>
-						<li>Aufarbeitung Ihres Schmuckes</li>
-						<li>Ankauf von Altmaterial, (Edelmetalle, Zahngold, Münzen, ect.)</li>
-						<li>Taxierung/Expertise Ihrer Schmuckstücke</li>
-					</ul>
+			<div class="flex flex-col gap-6 ">
+				<div class="flex flex-wrap">
+					<div class="w-full lg:w-1/2 pl-4">
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Anfertigungen nach Ihren Wünschen, auch Verwendung Ihres Materials (Edelmetall, Besatz, Erinnerungsstücke)
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Neues abgestimmtes Kettenmaterial für Anhänger und Colliers
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Individuelle Trauringanfertigungen
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Gravieren Ihres Schmuckes
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Gestaltete Edelstein Ketten mit und ohne Edelmetall
+						</div>
+					</div>
+					<div class="w-full lg:w-1/2 pl-4">
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Aufziehen oder Knoten von Perlketten
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Änderungen, Umarbeitungen Ihres Schmuckes
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Reparatur Ihres Schmuckes
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Aufarbeitung Ihres Schmuckes
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Ankauf von Altmaterial, (Edelmetalle, Zahngold, Münzen, ect.)
+						</div>
+						<div>
+							<span class="bg-nh-orange-light text-nh-orange w-4 h-4 mr-2 rounded-full inline-flex items-center justify-center">
+								<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="w-3 h-3" viewBox="0 0 24 24">
+									  <path d="M20 6L9 17l-5-5"></path>
+								</svg>
+							</span>Taxierung/Expertise Ihrer Schmuckstücke
+						</div>
+					</div>
 				</div>
-				<div class="flex items-center lg:w-3/6 lg:hidden">
+
+				<div class="flex items-center lg:w-3/6 md:hidden">
 					<img data-aos="fade-up" class="" src="./img/_OM10159.jpg" alt="">
 				</div>
 			</div>
 			<div class="flex flex-col justify-center gap-2 md:gap-6 md:flex-row">
 				<div class="flex flex-row justify-center gap-2">
 					<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-						<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+						<path
+							d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
 					</svg>
-					<p>0361 2110041</p>
+					<a href="tel:+49-361-2110041">0361 2110041</a>
 				</div>
 				<div class="flex flex-row justify-center gap-2">
 					<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
 						<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 						<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 					</svg>
-					<p>info@galerie-hagemeister.de</p>
+					<a href="mailto:info@galerie-hagemeister.de">info@galerie-hagemeister.de</a>
 				</div>
 			</div>
 		</div>
@@ -159,101 +244,64 @@
 
 	<!-- materials -->
 	<section class="my-16" id="werkstoffe">
-		<div class="container flex flex-col gap-10">
-			<h1 class="text-2xl text-center lg:text-3xl">Werkstoffe</h1>
+		<div class="container flex flex-col gap-10 text-center">
+			<h1 class="text-2xl lg:text-3xl">Werkstoffe</h1>
 			<div class="flex justify-center -mt-8">
 				<hr class="md:w-[200px] border-nh-orange" />
 			</div>
-			<div class="flex flex-col gap-10 text-center">
-				<p>
-					Wir verwenden und verarbeiten Recycling- oder Fair Trade Materialien.
-				</p>
-
-
-
-
-
-				
-				<div class="flex flex-col gap-4 mx-4 lg:flex-row">
-					<div class="grid grid-cols-2 gap-10 md:grid-cols-2 lg:w-1/2 md:justify-items-center ">
-						<div class="flex flex-col gap-2 md:w-[140px">
-							<img data-aos="fade-up" class=" bg-nh-orange-light" src="./img/ag.png" alt="">
-							<p class="flex-none">925/- Sterling Silber</p>
-						</div>
-						<div class="flex flex-col gap-2 md:w-[140px]">
-							<img data-aos="fade-up" class=" bg-nh-orange-light" src="./img/au.png" alt="">
-							<p class="flex-none">Gelb-, Rose-, Rot-, Weiss-, Grüngold</p>
-						</div>
-						<div class="flex flex-col gap-2 md:w-[140px]">
-							<img data-aos="fade-up" class=" bg-nh-orange-light" src="./img/pd.png" alt="">
-							<p class="flex-none">950/- Palladium</p>
-						</div>
-						<div class="flex flex-col gap-2 md:w-[140px]">
-							<img data-aos="fade-up" class=" bg-nh-orange-light" src="./img/pt.png" alt="">
-							<p class="flex-none">Platin-Ruthenium, Platin Iridium</p>
-						</div>
-					</div>
-					<div class="lg:w-1/2">
-						<div>
-							Perlen: Tahiti-, Akoya-, Süßwasser-, Keshi-, Mabeperlen
-						</div>
-						<div>
-							Brillanten/Diamanten: In verschiedene Farben, von weis bis schwarz
-						</div>
-						<div>
-							Farbsteine: vom Rubin bis Smaragd
-						</div>
-						<div>
-							Opale: vom Feueropal bis Schwarzopal
-						</div>
-					</div>
+			<p>
+				Wir verwenden und verarbeiten Recycling- oder Fair Trade Materialien.
+			</p>
+			<div class="flex flex-wrap">
+				<div class="flex flex-col gap-2 w-1/2 md:w-1/4">
+					<img data-aos="fade-up" class=" bg-nh-orange-light m-4 lg:mx-16" src="./img/ag.svg" alt="">
+					<p class="flex-none">925/- Sterling Silber</p>
 				</div>
-				
-
-				
-
+				<div class="flex flex-col gap-2 w-1/2 md:w-1/4">
+					<img data-aos="fade-up" class=" bg-nh-orange-light m-4 lg:mx-16" src="./img/au.svg" alt="">
+					<p class="flex-none">Gelb-, Rose-, Rot-, Weiss-, Grüngold</p>
+				</div>
+				<div class="flex flex-col gap-2 w-1/2 md:w-1/4">
+					<img data-aos="fade-up" class=" bg-nh-orange-light m-4 lg:mx-16" src="./img/pd.svg" alt="">
+					<p class="flex-none">950/- Palladium</p>
+				</div>
+				<div class="flex flex-col gap-2 w-1/2 md:w-1/4">
+					<img data-aos="fade-up" class=" bg-nh-orange-light m-4 lg:mx-16" src="./img/pt.svg" alt="">
+					<p class="flex-none">Platin-Ruthenium, Platin Iridium</p>
+				</div>
 			</div>
 
-			<!-- carousel -->
-			<div class="relative w-full overflow-hidden carousel-inner">
-				<!--Slide 1-->
-				  <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-				  <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-					  <div class="block w-full h-full text-5xl text-center text-white bg-indigo-500">Slide 1</div>
-				  </div>
-				  <label for="carousel-3" class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-1 md:ml-10 hover:text-white hover:bg-blue-700">‹</label>
-				  <label for="carousel-2" class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-1 md:mr-10 hover:text-white hover:bg-blue-700">›</label>
-				  
-				  <!--Slide 2-->
-				  <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-				  <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-					  <div class="block w-full h-full text-5xl text-center text-white bg-orange-500">Slide 2</div>
-				  </div>
-				  <label for="carousel-1" class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-2 md:ml-10 hover:text-white hover:bg-blue-700">‹</label>
-				  <label for="carousel-3" class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-2 md:mr-10 hover:text-white hover:bg-blue-700">›</label> 
-				  
-				  <!--Slide 3-->
-				  <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-				  <div class="absolute opacity-0 carousel-item" style="height:50vh;">
-					  <div class="block w-full h-full text-5xl text-center text-white bg-green-500">Slide 3</div>
-				  </div>
-				  <label for="carousel-2" class="absolute inset-y-0 left-0 z-10 hidden w-10 h-10 my-auto ml-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer prev control-3 md:ml-10 hover:text-white hover:bg-blue-700">‹</label>
-				  <label for="carousel-1" class="absolute inset-y-0 right-0 z-10 hidden w-10 h-10 my-auto mr-2 text-3xl font-bold leading-tight text-center text-black bg-white rounded-full cursor-pointer next control-3 md:mr-10 hover:text-white hover:bg-blue-700">›</label>
-		  
-				  <!-- Add additional indicators for each slide-->
-				  <ol class="carousel-indicators">
-					  <li class="inline-block mr-3">
-						  <label for="carousel-1" class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700">•</label>
-					  </li>
-					  <li class="inline-block mr-3">
-						  <label for="carousel-2" class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700">•</label>
-					  </li>
-					  <li class="inline-block mr-3">
-						  <label for="carousel-3" class="block text-4xl text-white cursor-pointer carousel-bullet hover:text-blue-700">•</label>
-					  </li>
-				  </ol>
-			  </div>
-			  
+			<div class="flex flex-wrap">
+				<div class="flex flex-col xl:w-1/4 md:w-1/2">
+					<div class="bg-nh-grey-light p-6 m-3 flex-1">
+						<img data-aos="fade-up" src="./img/P5250324.jpg" alt="" class="w-full object-center mb-6">
+						<h2 class="text-lg text-gray-900 font-medium title-font mb-4">Perlen</h2>
+						<p class="leading-relaxed text-base">Tahiti-, Akoya-, Süßwasser-, Keshi-, Mabeperlen</p>
+					</div>
+				</div>
+				<div class="flex flex-col xl:w-1/4 md:w-1/2">
+					<div class="bg-nh-grey-light p-6 m-3 flex-1">
+						<img data-aos="fade-up" src="./img/P5250260.jpg" alt="" class="w-full  object-center mb-6">
+						<h2 class="text-lg text-gray-900 font-medium title-font mb-4">Brillanten/Diamanten</h2>
+						<p class="leading-relaxed text-base">In verschiedene Farben, von weis bis schwarz</p>
+					</div>
+				</div>
+				<div class="flex flex-col xl:w-1/4 md:w-1/2">
+					<div class="bg-nh-grey-light p-6 m-3 flex-1">
+						<img data-aos="fade-up" src="./img/P5250308.jpg" alt="" class="w-full object-center mb-6">
+						<h2 class="text-lg text-gray-900 font-medium title-font mb-4">Farbsteine</h2>
+						<p class="leading-relaxed text-base">vom Rubin bis Smaragd</p>
+					</div>
+				</div>
+				<div class="flex flex-col xl:w-1/4 md:w-1/2">
+					<div class="bg-nh-grey-light p-6 m-3 flex-1">
+						<img data-aos="fade-up" src="./img/P5250348.jpg" alt="" class="w-full object-center mb-6">
+						<h2 class="text-lg text-gray-900 font-medium title-font mb-4">Opale</h2>
+						<p class="leading-relaxed text-base">vom Feueropal bis Schwarzopal</p>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</section>
 
@@ -283,21 +331,22 @@
 				<hr class="md:w-[130px] border-nh-orange" />
 			</div>
 			<div class="flex flex-col gap-6 md:flex-row md:items-center">
-				<div class="flex flex-col gap-4 md:w-1/3 xl:flex-row xl:w-2/4 xl:justify-center xl:gap-32 xl:items-center">
+				<div
+					class="flex flex-col gap-4 md:w-1/3 xl:flex-row xl:w-2/4 xl:justify-center xl:gap-32 xl:items-center">
 					<div class="text-center">
 						<div class="flex flex-col justify-center">
 							<span class="text-4xl tracking-[.09em] text-nh-orange ">galerie</span>
 							<span class="mt-2 text-5xl">HAGE</span>
 							<span class="-mt-2 text-4xl tracking-[.01em]">meister</span>
 						</div>
-						<p class="py-4">Goldschmiedemeister<br/>Norbert Hagemeister</p>
+						<p class="py-4">Goldschmiedemeister<br />Norbert Hagemeister</p>
 						<p>Pergamentergasse 20</br>998084 Erfurt</p>
 					</div>
 					<div class="text-center">
 						<h2 class="pb-4 text-xl">Öffnungszeiten</h2>
 						<p>Dienstag bis Freitag</p>
 						<p>11.00 - 19.00 Uhr</p>
-						<p>Samstag	ab 10.00 Uhr</p>
+						<p>Samstag ab 10.00 Uhr</p>
 					</div>
 				</div>
 				<div class="md:w-2/3 xl:w-2/4">
@@ -312,16 +361,17 @@
 		<div class="container flex flex-col justify-center text-center md:flex-row md:gap-10">
 			<div class="flex flex-row justify-center gap-2">
 				<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-					<path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+					<path
+						d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
 				</svg>
-				<p>0361 2110041</p>
+				<a href="tel:+49-361-2110041">0361 2110041</a>
 			</div>
 			<div class="flex flex-row justify-center gap-2">
 				<svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
 					<path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
 					<path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
 				</svg>
-				<p>info@galerie-hagemeister.de</p>
+				<a href="mailto:info@galerie-hagemeister.de">info@galerie-hagemeister.de</a>
 			</div>
 		</div>
 	</footer>
@@ -329,14 +379,15 @@
 	<script>
 		AOS.init();
 		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-		anchor.addEventListener('click', function (e) {
-			e.preventDefault();
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
 
-			document.querySelector(this.getAttribute('href')).scrollIntoView({
-				behavior: 'smooth'
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
 			});
 		});
-	});
 	</script>
 </body>
+
 </html>
