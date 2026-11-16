@@ -15,7 +15,7 @@ To preview, open `src/index.html` directly in a browser or serve the `src/` fold
 
 ## Architecture
 
-- `src/` is the deployable web root (uploaded as-is to an Apache host; `src/.htaccess` forces HTTPS redirect to `galerie-hagemeister.de`).
+- `src/` is the deployable web root (uploaded as-is to an Apache host). `src/.htaccess` 301-redirects http, www and `/index.html` to the canonical `https://galerie-hagemeister.de/`; keep canonical, `og:url`, `robots.txt` and `sitemap.xml` on that exact URL. Update `<lastmod>` in `src/sitemap.xml` when page content changes.
 - `src/index.html` holds the entire page: header, sections (`#werkstattangebot`, `#werkstoffe`, `#arbeiten`, `#kontakt`), footer, plus an inline script that initializes AOS and adds smooth scrolling for `#` anchor links.
 - `src/style.css` is **generated** by Tailwind — never edit it by hand. Edit `input.css` (Roboto `@font-face` declarations + Tailwind directives) or `tailwind.config.js` instead, then rebuild.
 - Tailwind scans `./src/**/*.{html,js}` for classes, so new utility classes in `index.html` only appear after a rebuild.
