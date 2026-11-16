@@ -29,6 +29,42 @@
 		<link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
 		<link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
 
+		<!-- Strukturierte Daten -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "JewelryStore",
+				"@id": "https://galerie-hagemeister.de/#galerie",
+				"name": "Galerie Hagemeister",
+				"description": "Individueller Schmuck vom Goldschmiedemeister in Erfurt. Trauringe, Schmuckanfertigungen, Reparaturen und Umarbeitungen.",
+				"url": "https://galerie-hagemeister.de/",
+				"image": "https://galerie-hagemeister.de/img/og-image.jpg",
+				"telephone": "+49 361 2110041",
+				"email": "info@galerie-hagemeister.de",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "Pergamentergasse 20",
+					"postalCode": "99084",
+					"addressLocality": "Erfurt",
+					"addressRegion": "Thüringen",
+					"addressCountry": "DE"
+				},
+				"founder": {
+					"@type": "Person",
+					"name": "Norbert Hagemeister",
+					"jobTitle": "Goldschmiedemeister"
+				},
+				"openingHoursSpecification": [
+					{
+						"@type": "OpeningHoursSpecification",
+						"dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"],
+						"opens": "11:00",
+						"closes": "19:00"
+					}
+				]
+			}
+		</script>
+
 		<!-- Stylesheets -->
 		<link rel="stylesheet" href="./style.css" />
 		<link rel="stylesheet" href="./aos.css" />
