@@ -1,3 +1,10 @@
 RewriteEngine On
-RewriteCond %{SERVER_PORT} !=443
+
+# Einheitliche URL: http und www -> https://galerie-hagemeister.de
+RewriteCond %{SERVER_PORT} !=443 [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
 RewriteRule ^(.*)$ https://galerie-hagemeister.de/$1 [R=301,L]
+
+# /index.html -> /
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ https://galerie-hagemeister.de/ [R=301,L]
